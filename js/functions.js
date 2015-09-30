@@ -253,7 +253,7 @@ var gridOpen = false;
 function swapGridBox(box) {
     if ( !$(box).hasClass('expanded') ) {
         $(box).parent('li').siblings().css('display','none');
-        $(box).parents('ul').removeClass('large-block-grid-5');
+        $(box).parents('ul').removeClass('large-block-grid-3');
         $(box).parents('ul').removeClass('medium-block-grid-3');
         $(box).parents('ul').removeClass('small-block-grid-1');
         $(box).find('p.gridcaption').css('display','none');
@@ -266,7 +266,7 @@ function swapGridBox(box) {
         gridOpen = true;
     } else if (!playerClear) {
         $(box).parent('li').siblings().css('display','block');
-        $(box).parents('ul').addClass('large-block-grid-5');
+        $(box).parents('ul').addClass('large-block-grid-3');
         $(box).parents('ul').addClass('medium-block-grid-3');
         $(box).parents('ul').addClass('small-block-grid-1');
         $(box).find('p.gridcaption').css('display','block');
@@ -286,9 +286,12 @@ $('.gridbox.clickable').on("click", function() {
 $(document).mouseup(function (e)
 {
     if (gridOpen) {
-        var container = $('.gridbox.expanded');
+        var container = $('.gridbox.expanded').parent('li');
         var adWrap = $('#adwrapper');
-        if (!adWrap.is(e.target) && adWrap.has(e.target).length === 0 && !container.is(e.target) && container.has(e.target).length === 0)
+        var video = $('.gridbox.expanded .inset-video-center');
+        if (!adWrap.is(e.target) && adWrap.has(e.target).length === 0
+            && !container.is(e.target) && container.has(e.target).length === 0
+            && !video.is(e.target) && video.has(e.target).length === 0)
         {
             swapGridBox(container);
         }

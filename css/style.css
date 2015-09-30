@@ -317,14 +317,18 @@ section.inset.right.chart h3.subheading {
     cursor:pointer;
 }
 .gridbox.expanded {
+    display:block;
     cursor:auto;
     margin:0 auto;
     padding:.5em;
     border:1px solid #ccc;
-    max-width:60%;
+    max-width:80%;
 }
 .gridbox.expanded .gridphoto {
     pointer-events:auto;
+}
+.gridbox.expanded .inset-video-center {
+    z-index: 90;
 }
 .gridphoto {
     position: relative;
@@ -948,7 +952,7 @@ a.startVideo:hover {
     text-transform: uppercase;
     display:block;
     position: absolute;
-    top:25%;
+    top:10%;
     text-align:center;
     margin:0 auto;
     width:100%;
@@ -998,9 +1002,6 @@ div#footer-bar ul.social li {
     .opener div#title h2 {
         font-size:10em;
     }
-    .gridbox.expanded {
-        max-width:85%;
-    }
     .gridbox p.gridcaption, .gridcenter p.gridcaption {
         font-size: 1.6em;
         padding:25% 5% 0;
@@ -1031,7 +1032,7 @@ div#footer-bar ul.social li {
 }
 @media (max-width:768px) and (orientation:portrait) {
     .gridbox.expanded {
-        max-width:80%;
+        max-width:90%;
     }
     .gridbox.expanded .gridphotospace {
         padding-bottom:120%;
