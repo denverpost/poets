@@ -1023,7 +1023,7 @@ div#footer-bar ul.social li {
         font-size:10em;
     }
     .gridphoto .gridprofile h2 {
-        font-size:2em;
+        font-size:4em;
         margin:8% 5% 0;
     }
 }
@@ -1150,6 +1150,9 @@ div#footer-bar ul.social li {
     }
     .photogrid {
         padding:1em 5%;
+    }
+    .smallHide {
+        display:none!important;
     }
 }
 @media (max-width:540px) and (orientation:portrait) {
