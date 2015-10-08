@@ -356,7 +356,7 @@ section.inset.right.chart h3.subheading {
     color: rgba(189,0,128,1.0);
     font-family:'Six Caps',Helvetica,Arial,sans-serif!important;
     font-size:7em;
-    letter-spacing:.5px;
+    letter-spacing:3px;
     line-height:1.2;
     text-transform: uppercase;
     margin:.65em auto 0;
@@ -365,10 +365,12 @@ section.inset.right.chart h3.subheading {
     font-size:1.05em;
 }
 .gridprofile p.lead:first-letter {
-    font-size:1.8em;
+    font-size:3em;
     line-height:1;
     margin-right:.1em;
     float:none;
+    color:rgba(189,0,128,1.0);
+    
 }
 .gridbox.expanded .gridphoto .gridprofile {
     display:block;
@@ -628,20 +630,19 @@ div.title h2 {
     font-family:'Six Caps',Helvetica,Arial,sans-serif!important;
     font-weight:700;
     font-size:5em;
-    letter-spacing:0px;
+    letter-spacing:3px;
     line-height:1;
     color:rgba(0,0,0,0.5);
     display:block;
     z-index:-1;
 }
 div.title h1 {
-    margin:4em 0 .5em;
+    margin:2em 0 .5em;
     text-align: center;
-    font-family:'Six Caps',Helvetica,Arial,sans-serif!important;
+    font-family:Helvetica,Arial,sans-serif!important;
     font-size:3em;
-    font-weight:400;
-    line-height:1;
-    text-transform:uppercase;
+    font-weight:300;
+    line-height:1.7;
     color:rgba(34,34,34,1);
     display:block;
     z-index:-1;
@@ -653,6 +654,9 @@ h1, h2, h3, h4 {
 div.title h3 {
     text-transform: none;
     color:rgba(0,0,0,0.8);
+}
+h4{
+    font-family:'Noticia Text', Georgia, Times, 'Times New Roman', serif !important;
 }
 p, .reveal-modal li {
   	color:#333;
@@ -742,7 +746,7 @@ p.small {
     font-weight:400;
 }
 a, a *, * a, a:visited, a:visited *, * a:visited, a:active, a:active *, * a:active, a:focus, a:focus *, * a:focus {
-    color:#004646;
+    color:rgba(189,0,128,1.0);
     outline:none;
 }
 p a, p a:visited {
