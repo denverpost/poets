@@ -458,6 +458,7 @@ section.inset.right.chart h3.subheading {
     position:relative;
     width:100%;
     margin:.25em 0;
+    display:none;
 }
 .gridcenter {
     margin:.25em;
@@ -1153,6 +1154,9 @@ div#footer-bar ul.social li {
     }
     .smallHide {
         display:none!important;
+    }
+    .gridcentersmall {
+        display:block;
     }
 }
 @media (max-width:540px) and (orientation:portrait) {
