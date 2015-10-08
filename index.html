@@ -49,14 +49,14 @@
 	<meta property="og:description" content="Poetry Now: Colorado poets read their work and talk about how their writing connects with current events." />
 	<meta property="article:publisher" content="https://www.facebook.com/denverpost" />
 	
-	<link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,700,400italic,700italic|PT+Sans:400,700,400italic,700italic|PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,700,400italic,700italic|PT+Sans:400,700,400italic,700italic|Six+Caps' rel='stylesheet' type='text/css'>
 
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="./js/jquery.unveil.js"></script>
+	<script type="text/javascript" src="./js/jquery.textfill.min.js"></script>
 	<script type="text/javascript" src="./js/vendor/modernizr.js"></script>
     <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
-    <script type="text/javascript" src="//www.googletagservices.com/tag/js/gpt.js"></script>
+    <!-- <script type="text/javascript" src="//www.googletagservices.com/tag/js/gpt.js"></script> -->
 </head>
 <body>
 <!-- Google Tag Manager Data Layer -->
@@ -87,14 +87,14 @@
         'Update Hour of Day':'',
         'Behind Paywall':'NO',
         'Mobile Presentation':is_mobile(),
-        'kv':'lifestyles',
+        'kv':'photo',
         'Release Version':'',
         'Digital Publisher':'',
         'Platform':'custom',
         'Section':'Special Projects',
-        'Taxonomy1':'Lifestyle',
+        'Taxonomy1':'photo',
         'Taxonomy2':'Special Projects',
-        'Taxonomy3':'MatriMoney',
+        'Taxonomy3':'Poetry Now',
         'Taxonomy4':'',
         'Taxonomy5':'',
         'Content Source':'',
@@ -136,7 +136,7 @@
 				<li class="top-top"><a href="javascript:void(0);" data-reveal-id="credits">Credits</a></li>
 				<!-- end link to modal window -->
 				<li class="divider"></li>
-				<li class="top-top has-dropdown"><a href="javascript:voi(0);">Share</a>
+				<li class="top-top has-dropdown"><a href="javascript:void(0);">Share</a>
 					<ul class="dropdown">
 						<li class="social"><a href="javascript:void(0);" onclick="revealSocial('twitter','http://dpo.st/weddinghowto','Poetry Now: Colorado poets and their work - The Denver Post','','','denverpost','emilierusch');"><img src="./img/icon-twitter.png" alt="Tweet this" /> Twitter</a></li>
 						<li class="social"><a href="javascript:void(0);" onclick="revealSocial('facebook','http://dpo.st/weddinghowto','Poetry Now: Colorado poets and their work - The Denver Post','http://extras.denverpost.com/poetry-now/img/poetrynow-fb-image.jpg','How to plan a wedding: A collection of useful articles from pieces to places and dollars to diamonds.');"><img src="./img/icon-facebook.png" alt="Share on Facebook" /> Facebook</a></li>
@@ -161,23 +161,11 @@
 
 <div id="profiles">
 	<div class="photogrid">
+		<div id="funkyName" class="gridcentersmall hide-for-medium-up">
+			<div class="gridphotospace"></div>
+			<p class="gridcaption" style="display:block;opacity:1;pointer-events:none;background-color:#FFF;text-align:center;padding-right:0;padding-left:0;">Poetry Now</p>
+		</div>
 		<ul class="large-block-grid-3 medium-block-grid-3 small-block-grid-1">
-			<!--<li>
-				<div class="gridcenter">
-					<div class="gridphoto" style="background-color:#f4f4f4;">
-						<div class="gridphotospace"></div>
-						<p class="gridcaption" style="display:block;opacity:1;pointer-events:none;background-color:#FFF;text-align:right;padding-right:0;padding-left:0;">HOW TO PLAN</p>
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class="gridcenter">
-					<div class="gridphoto" style="background-color:#f4f4f4;">
-						<div class="gridphotospace"></div>
-						<p class="gridcaption" style="display:block;opacity:1;pointer-events:none;background-color:#FFF;text-align:left;padding-right:0;padding-left:0;">A WEDDING</p>
-					</div>
-				</div>
-			</li>-->
 			<li>
 				<div class="gridbox clickable">
 					<div class="gridphoto" style="background-image:url('./img/grid/grid-Molina-Speaks.jpg');">
@@ -189,7 +177,7 @@
 							<div class="row">
 								<div class="large-12 large-centered medium-12 medium-centered small-12 columns">
 									<div class="title">
-										<h2><a href="http://www.denverpost.com/lifestyles/ci_25088439/used-it-still-rocks">"Peot Quote Here" - Molina Speaks</a></h2>
+										<h2>"Peot Quote Here" - Molina Speaks</h2>
 									</div>
 								</div>
 							</div>
@@ -245,7 +233,7 @@
 							<div class="row">
 								<div class="large-12 large-centered medium-12 medium-centered small-12 columns">
 									<div class="title">
-										<h2><a href="http://www.denverpost.com/lifestyles/ci_25088439/used-it-still-rocks">"Peot Quote Here" - Serena Chopra</a></h2>
+										<h2>"Peot Quote Here" - Serena Chopra</h2>
 									</div>
 								</div>
 							</div>
@@ -301,7 +289,7 @@
 							<div class="row">
 								<div class="large-12 large-centered medium-12 medium-centered small-12 columns">
 									<div class="title">
-										<h2><a href="http://www.denverpost.com/lifestyles/ci_25088439/used-it-still-rocks">"Peot Quote Here" - Joseph Braun</a></h2>
+										<h2>"Peot Quote Here" - Joseph Braun</h2>
 									</div>
 								</div>
 							</div>
@@ -357,7 +345,7 @@
 							<div class="row">
 								<div class="large-12 large-centered medium-12 medium-centered small-12 columns">
 									<div class="title">
-										<h2><a href="http://www.denverpost.com/smart/ci_26522902/off-season-weddings-can-offer-savings-sentiment#theknot"> "Peot Quote Here" - Sommer Browning</a></h2>
+										<h2><a href="http://www.denverpost.com/smart/ci_26522902/off-season-weddings-can-offer-savings-sentiment#theknot"> "Peot Quote Here" - Sommer Browning</h2>
 									</div>
 								</div>
 							<div class="large-12 large-centered medium-12 medium-centered small-12 columns photogrid">
@@ -400,19 +388,19 @@
 					</div>
 				</div>
 			</li>
-			<li>	
+			<li class="hide-for-small">
 				<div class="gridcenter">
 					<div class="gridphoto" style="background-color:#f4f4f4;">
 						<div class="gridphotospace"></div>
-						<p class="gridcaption" style="display:block;opacity:1;pointer-events:none;background-color:#FFF;text-align:left;padding-right:0;padding-left:0;">Poetry</p>
+						<p class="gridcaption" style="pointer-events:none;background-color:#FFF;text-align:right;padding-right:2.5%;padding-left:0;">Poetry</p>
 					</div>
 				</div>
 			</li>
-			<li>
+			<li class="hide-for-small">
 				<div class="gridcenter">
 					<div class="gridphoto" style="background-color:#f4f4f4;">
 						<div class="gridphotospace"></div>
-						<p class="gridcaption" style="display:block;opacity:1;pointer-events:none;background-color:#FFF;text-align:left;padding-right:0;padding-left:0;">Now</p>
+						<p class="gridcaption" style="pointer-events:none;background-color:#FFF;text-align:left;padding-right:0;padding-left:2.5%;">Now</p>
 					</div>
 				</div>
 			</li>
@@ -427,7 +415,7 @@
 							<div class="row">
 								<div class="large-12 large-centered medium-12 medium-centered small-12 columns">
 									<div class="title">
-										<h2><a href="http://www.denverpost.com/smart/ci_26794272/matrimoney-wedding-planning-help-comes-many-shapes-sizes">"Quote here" -Noah Eli Gordon</a></h2>
+										<h2><a href="http://www.denverpost.com/smart/ci_26794272/matrimoney-wedding-planning-help-comes-many-shapes-sizes">"Quote here" -Noah Eli Gordon</h2>
 									</div>
 								</div>
 							<div class="large-12 large-centered medium-12 medium-centered small-12 columns photogrid">
@@ -481,7 +469,7 @@
 							<div class="row">
 								<div class="large-12 large-centered medium-12 medium-centered small-12 columns">
 									<div class="title">
-										<h2><a href="http://www.denverpost.com/smart/ci_27089344/plan-like-wedding-pro-start-by-setting-priorities"> "Quote here" - Elizabeth Robinson</a></h2>
+										<h2><a href="http://www.denverpost.com/smart/ci_27089344/plan-like-wedding-pro-start-by-setting-priorities"> "Quote here" - Elizabeth Robinson</h2>
 									</div>
 								</div>
 							<div class="large-12 large-centered medium-12 medium-centered small-12 columns photogrid">
@@ -535,7 +523,7 @@
 							<div class="row">
 								<div class="large-12 large-centered medium-12 medium-centered small-12 columns">
 									<div class="title">
-										<h2><a href="http://www.denverpost.com/smart/ci_27089344/plan-like-wedding-pro-start-by-setting-priorities">"Quote Here" - Brice Maiurro</a></h2>
+										<h2><a href="http://www.denverpost.com/smart/ci_27089344/plan-like-wedding-pro-start-by-setting-priorities">"Quote Here" - Brice Maiurro</h2>
 									</div>
 								</div>
 							<div class="large-12 large-centered medium-12 medium-centered small-12 columns photogrid">
