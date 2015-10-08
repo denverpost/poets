@@ -171,6 +171,7 @@ function swapGridBox(box) {
         $(box).parents('ul').removeClass('medium-block-grid-3');
         $(box).parents('ul').removeClass('small-block-grid-1');
         $(box).find('p.gridcaption').css('display','none');
+        $('#topblurb').css('display','none');
         $(box).closest('ul').siblings('.gridcentersmall').css({overflow:'hidden',height:'0px'});
         $(box).find('.gridphotograd').css('display','block');
         $(box).addClass('expanded');
@@ -185,6 +186,7 @@ function swapGridBox(box) {
         $(box).parents('ul').addClass('medium-block-grid-3');
         $(box).parents('ul').addClass('small-block-grid-1');
         $(box).find('p.gridcaption').css('display','block');
+        $('#topblurb').css('display','block');
         $(box).closest('ul').siblings('.gridcentersmall').css({overflow:'hidden',height:'auto'});
         $(box).find('.gridphotograd').css('display','none');
         $(box).removeClass('expanded');
@@ -314,7 +316,7 @@ $(window).resize(function() {
 setInterval(function() {
     if ( didScroll ) {
         checkAdPos();
-        checkFade();
+        //checkFade();
         didScroll = false;
     }
 },250);
