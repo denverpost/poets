@@ -314,6 +314,5 @@ setInterval(function() {
         checkAdPos();
         checkFade();
         didScroll = false;
-        console.log('ran interval');
     }
 },250);

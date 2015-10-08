@@ -584,9 +584,9 @@ section.inset.right.chart h3.subheading {
 .tooltip {
     color:#333;
     background:#f9f9f9;
-    -webkit-box-shadow:1px 1px 3px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow:1px 1px 3px rgba(0, 0, 0, 0.25);
-    box-shadow:1px 1px 3px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow:1px 1px 3px rgba(0,0,0,0.25);
+    -moz-box-shadow:1px 1px 3px rgba(0,0,0,0.25);
+    box-shadow:1px 1px 3px rgba(0,0,0,0.25);
     font-size:.9em;
     line-height:1.5;
     font-family:'PT Sans', Helvetica, Arial, sans-serif !important;
