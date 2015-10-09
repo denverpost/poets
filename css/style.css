@@ -305,7 +305,7 @@ section.inset.right.chart h3.subheading {
     background-image:none!important;
 }
 .photogrid {
-    padding:2em 5%;
+    padding:2em 2.5%;
 }
 .photogrid li {
     margin-bottom:0;
@@ -1159,7 +1159,7 @@ div#footer-bar ul.social li {
         width: 100%;
     }
     .photogrid {
-        padding:1em 5%;
+        padding:1em 2.5%;
     }
     .smallHide {
         display:none!important;
@@ -1267,6 +1267,9 @@ div#footer-bar ul.social li {
     div.title.lowertitle h1, section.inset div.title.lowertitle h1{
         width:90%;
         font-size:1.85em;
+    }
+    .photogrid {
+        padding:1em 1.5%;
     }
     p, .reveal-modal li {
         font-size:1em;
