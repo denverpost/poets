@@ -312,6 +312,10 @@ section.inset.right.chart h3.subheading {
     list-style-type: none;
     padding: 0 .25em .5em;
 }
+.photogrid h4 {
+    font-size:1.2em;
+    margin-bottom:.5em;
+}
 .gridbox {
     margin:.25em;
     cursor:pointer;
@@ -652,10 +656,6 @@ h1, h2, h3, h4 {
   	font-family:'Six Caps',Helvetica,Arial,sans-serif!important;
   	font-weight:700;
 }
-div.title h3 {
-    text-transform: none;
-    color:rgba(0,0,0,0.8);
-}
 h4{
     font-family:'Noticia Text', Georgia, Times, 'Times New Roman', serif !important;
 }
@@ -665,6 +665,9 @@ p, .reveal-modal li {
     line-height:2;
     margin-bottom:1.6em;
     list-style:circle inside;
+}
+.photogrid ul {
+    margin:0;
 }
 #credits .row {
     margin-top:2em;
@@ -1122,6 +1125,9 @@ div#footer-bar ul.social li {
     section.inset p {
         line-height: 1.7;
     }
+    div.title h3 {
+        font-size:2.5em;
+    }
 }
 @media (max-width:640px) {
     .inset-video-right, section.inset .inset-video-right {
@@ -1166,6 +1172,10 @@ div#footer-bar ul.social li {
         line-height:1.2;
         margin-bottom:1em;
         padding: 0 5%;
+    }
+    .gridcentersmall h1.gridcaption {
+        font-size:7.25em;
+        padding:0 .5em .25em;
     }
 }
 @media (max-width:540px) and (orientation:portrait) {
@@ -1263,12 +1273,15 @@ div#footer-bar ul.social li {
     }
     p.lead {
         font-size:1.05em;
-        line-height:1.8;
+        line-height:1.65;
     }
     section.inset p {
         font-size: 1.05em;
     }
     section.inset p.caption {
         font-size: 1em;
+    }
+    div.title h3 {
+        font-size:2em;
     }
 }
