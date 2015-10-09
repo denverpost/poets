@@ -177,7 +177,7 @@ function swapGridBox(box) {
         $(box).addClass('expanded');
         $(box).removeClass('clickable');
         scrollDownTo('#profiles');
-        document.body.style.overflow='hidden';
+        $('body').css('background-color','rgba(0,0,0,0.7)');
         playerClear = false;
         gridOpen = true;
     } else if (!playerClear) {
@@ -191,7 +191,7 @@ function swapGridBox(box) {
         $(box).find('.gridphotograd').css('display','none');
         $(box).removeClass('expanded');
         $(box).addClass('clickable');
-        document.body.style.overflow='auto';
+        $('body').css('background-color','rgba(255,255,255,1)');
         playerClear = false;
         gridOpen = false;
     }
