@@ -10,14 +10,14 @@
 
             if ( params.indexOf('ad=medium') > -1 ) {
                 googletag.cmd.push(function(){
-                    googletag.defineSlot('/8013/denverpost.com', [[728,90]], 'dfp-20').setTargeting('kv', 'news').addService(googletag.pubads());
+                    googletag.defineSlot('/8013/denverpost.com/Lifestyle', [[728,90]], 'dfp-20').setTargeting('kv', 'news').addService(googletag.pubads());
                     googletag.pubads().enableSyncRendering();
                     //googletag.pubads().disableInitialLoad();
                     googletag.enableServices();
                     googletag.display('dfp-20');
                 });
             } else if ( params.indexOf('ad=small') > -1 ) {
-                googletag.defineSlot('/8013/denverpost.com/Lifestyle/Health/Mental-health', [300,50], 'dfp-20').addService(googletag.pubads());
+                googletag.defineSlot('/8013/denverpost.com/Lifestyle', [300,50], 'dfp-20').addService(googletag.pubads());
                 googletag.pubads().enableSyncRendering();
                 googletag.enableServices();
                 googletag.display('dfp-20');
