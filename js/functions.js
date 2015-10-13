@@ -140,15 +140,15 @@ function hideAdManual() {
 }
 
 $(document).keyup(function(e) {
-    if ( $('.gridbox.expanded').length ) {
+    if (swapped && e.keyCode == 27) {
+        hideAdManual();
+    } else if ( $('.gridbox.expanded').length ) {
         $('.gridbox').each(function() {
             if ( $(this).hasClass('expanded') ) {
                 swapGridBox(this);
             }
         });    
-    } else if (swapped && e.keyCode == 27) {
-        hideAdManual();
-    }    
+    }
 });
 
 function getAdSize() {
@@ -191,6 +191,7 @@ function swapGridBox(box) {
         $(box).find('.gridphotograd').css('display','none');
         $(box).removeClass('expanded');
         $(box).addClass('clickable');
+        scrollDownTo('#profiles');
         $('body').css('background-color','rgba(255,255,255,1)');
         playerClear = false;
         gridOpen = false;
