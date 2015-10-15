@@ -217,15 +217,18 @@ $('.boxclose').on("click", function(e) {
     }
 });
 
-$(document).mouseup(function(e) {
+$('body').on("click", function(e) {
+    e.stopImmediatePropagation();
     if (gridOpen) {
         var container = $('.gridbox.expanded');
         var adWrap = $('#adwrapper');
         var video = $('.gridbox.expanded .inset-video-center');
-        if (!adWrap.is(e.target) && adWrap.has(e.target).length === 0
+        if ( !adWrap.is(e.target) && adWrap.has(e.target).length === 0
             && !container.is(e.target) && container.has(e.target).length === 0
-            && !video.is(e.target) && video.has(e.target).length === 0)
+            && !video.is(e.target) && video.has(e.target).length === 0
+            && (e.target != $('html').get(0) ) )
         {
+            console.log(e.target);
             swapGridBox(container);
         }
     }
