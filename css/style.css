@@ -1053,10 +1053,7 @@ div#footer-bar ul.social li {
 }
 @media (max-width:768px) and (orientation:portrait) {
     .gridbox.expanded {
-        max-width:90%;
-    }
-    .gridbox.expanded .gridphotospace {
-        padding-bottom:120%;
+        max-width:95%;
     }
 }
 @media (max-width:930px) {
@@ -1186,9 +1183,6 @@ div#footer-bar ul.social li {
 @media (max-width:540px) and (orientation:portrait) {
     .gridbox.expanded {
         max-width:95%;
-    }
-    .gridbox.expanded .gridphotospace {
-        padding-bottom:150%;
     }
     .infobox p {
         line-height:1.5;

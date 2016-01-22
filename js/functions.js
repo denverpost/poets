@@ -29,7 +29,6 @@ function revealSocial(type,link,title,image,desc,twvia,twrel) {
     } else if (type == 'gplus') {
         srcurl = 'https://plus.google.com/share?url=' + link;
     }
-    console.log(srcurl);
     if (srcurl.length > 1) {
         window.open(srcurl, type, 'left=60,top=60,width=500,height=500,toolbar=1,resizable=1').focus();
     }
@@ -201,7 +200,6 @@ function swapGridBox(box) {
         scrollDownTo('#profiles');
         $('body').css('background-color','rgba(255,255,255,1)');
         $('video').each(function() {
-            console.log(this);
             this.pause();
         });
         gridOpen = false;
@@ -233,22 +231,14 @@ $('body').on("click", function(e) {
         var target = $(e.target);
         var container = $('.gridbox.expanded');
         var adWrap = $('#adwrapper');
-        var video = (target.is('video')) ? true : false;
+        var vidCont = $(container).find('video');
+        var video = (target.is(vidCont)) ? true : false;
         if ( !adWrap.is(e.target) && adWrap.has(e.target).length === 0
             && !container.is(e.target) && container.has(e.target).length === 0
             && !video
             && (e.target != $('html').get(0) ) )
         {
             swapGridBox(container);
-        } else {
-            if ( video ) {
-                console.log(target);
-                if ( target.get(0).paused ) {
-                    target.get(0).play();
-                } else {
-                    target.get(0).pause();
-                }
-            }
         }
     }
 });
